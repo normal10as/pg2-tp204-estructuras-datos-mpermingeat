@@ -23,8 +23,6 @@ Module e403
     Public cantnota As Int16
     Public alumno As String
 
-
-
     Sub Main()
 
         Console.WriteLine("Ingrese la Cantidad de alumnos")
