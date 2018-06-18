@@ -5,5 +5,23 @@ Imports System
 'dominio y se deberá mostrar el nombre del país. Salir cuando el valor ingresado es vacío.
 
 Module e404
+    Sub Main()
+        Dim dominio As String
+        Dim paises As New Collection
+        paises.Add("Argentina", "ar")
+        paises.Add("Paraguay", "py")
+        paises.Add("Brasil", "br")
+        paises.Add("Inglatera", "uk")
+        paises.Add("Mexico", "mx")
 
+        Do
+
+            Console.WriteLine("Ingrese un dominio")
+            dominio = Console.ReadLine
+            If dominio <> "" Then
+                Console.WriteLine(paises.Item(dominio))
+            End If
+        Loop Until (dominio = "")
+
+    End Sub
 End Module
